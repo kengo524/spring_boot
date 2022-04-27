@@ -7,10 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Column;
 
-import lombok.Data;
+// import lombok.Data;
 
 @Entity
-@Data
+// @Data
 @Table(name = "users")
 public class User {
     @Id

@@ -7,5 +7,4 @@ import com.example.spring_boot.domain.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-
 }
