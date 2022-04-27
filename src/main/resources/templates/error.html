@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>/error</title>
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}">
 </head>
 <body>
-  <div th:text="'timestamp: ' + ${timestamp}"></div>
-  <div th:text="'status: ' + ${status}"></div>
-  <div th:text="'error: ' + ${error}"></div>
-  <div th:text="'exception: ' + ${exception}"></div>
-  <div th:text="'message: ' + ${message}"></div>
-  <div th:text="'errors: ' + ${errors}"></div>
-  <div th:text="'trace: ' + ${trace}"></div>
-  <div th:text="'path: ' + ${path}"></div>
+    <ul class="list-group">
+        <li class="list-group-item"><div th:text="'timestamp: ' + ${timestamp}"></div></li>
+        <li class="list-group-item"><div th:text="'status: ' + ${status}"></div></li>
+        <li class="list-group-item"><div th:text="'error: ' + ${error}"></div></li>
+        <li class="list-group-item"><div th:text="'exception: ' + ${exception}"></div></li>
+        <li class="list-group-item"><div th:text="'message: ' + ${message}"></div></li>
+        <li class="list-group-item"><div th:text="'errors: ' + ${errors}"></div></li>
+        <li class="list-group-item"><div th:text="'trace: ' + ${trace}"></div></li>
+        <li class="list-group-item"><div th:text="'path: ' + ${path}"></div></li>
+      </ul>
+
+      <script th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
 </body>
 </html>
